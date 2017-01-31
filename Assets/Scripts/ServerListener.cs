@@ -141,17 +141,6 @@ namespace Assets.Scripts
                         Setdistance2();
                         Proceed();
                     }
-                    //Thread.Sleep(10);
-                    //HQ.shoot();
-                    //Thread.Sleep(10);
-                    //HQ.shoot();
-                    //Thread.Sleep(10);
-                    //HQ.shoot();
-                    //Thread.Sleep(10);
-                    //HQ.shoot();
-                    //HQ.shoot();
-                    //HQ.shoot();
-
                 }
                 Debug.Log("************ end if ");
 
