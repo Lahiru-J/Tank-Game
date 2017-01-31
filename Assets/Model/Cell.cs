@@ -1,4 +1,6 @@
-﻿namespace Assets.Model
+﻿using UnityEngine;
+
+namespace Assets.Model
 {
     public class Cell
     {
@@ -19,5 +21,7 @@
         {
             return string.Format("Cell@" + X + "," + Y);
         }
+
+        public Vector3 Possition { get {return new Vector3(X,Y,0);} }
     }
 }

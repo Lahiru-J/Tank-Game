@@ -21,7 +21,7 @@ namespace Assets.Scripts
             // Ignore
         }
 
-        private void C2SRequest(string message)
+        public void C2SRequest(string message)
         {
             try
             {

@@ -1,4 +1,6 @@
-﻿namespace Assets.Model
+﻿using UnityEngine;
+
+namespace Assets.Model
 {
     public class Tank
     {
@@ -11,6 +13,8 @@
         public int Points;
         public int X;
         public int Y;
+
+        public Vector3 Possition { get { return new Vector3(X,Y,0);} }
 
         public Tank(int id, bool isPlayer, int x, int y, int direction, bool isShot = false, int health = 0, int coins = 0,
             int points = 0)

@@ -1,4 +1,6 @@
-﻿namespace Assets.Model
+﻿using UnityEngine;
+
+namespace Assets.Model
 {
     public class CoinPack
     {
@@ -19,5 +21,8 @@
         {
             return string.Format("CoinPack@" + X + "," + Y);
         }
+
+        public bool IsAvailable { get { return Lifetime > 0; } }
+        public Vector3 Possition { get {return new Vector3(X,Y,0);} }
     }
 }

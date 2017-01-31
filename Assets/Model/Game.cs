@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Sockets;
+using System.Text;
 using Assets.Scripts;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 namespace Assets.Model
@@ -31,16 +35,22 @@ namespace Assets.Model
             switch (request)
             {
                 case ClientRequest.Down:
+                    new ServerConnect().C2SRequest(Constants.DOWN);
                     break;
                 case ClientRequest.Join:
+                    new ServerConnect().C2SRequest(Constants.JOIN);
                     break;
                 case ClientRequest.Left:
+                    new ServerConnect().C2SRequest(Constants.LEFT);
                     break;
                 case ClientRequest.Right:
+                    new ServerConnect().C2SRequest(Constants.RIGHT);
                     break;
                 case ClientRequest.Shoot:
+                    new ServerConnect().C2SRequest(Constants.SHOOT);
                     break;
                 case ClientRequest.Up:
+                    new ServerConnect().C2SRequest(Constants.UP);
                     break;
 
                 default:
@@ -48,6 +58,9 @@ namespace Assets.Model
                     break;
             }
         }
+        
+
+     
 
         #endregion
 
