@@ -138,7 +138,7 @@ namespace Assets.Scripts
                     if (coin != PlayerTankPossition)
                     {
                         Distance[(int)coin.x][(int)coin.y] = 0;
-                        Setdistance2();
+                        SetDistance();
                         Proceed();
                     }
                 }
@@ -201,11 +201,7 @@ namespace Assets.Scripts
 
             }
         }
-        public static void setDistance()
-        {
-
-        }
-        public static void Setdistance2()
+        public static void SetDistance()
         {
 
             int dist = 0;
