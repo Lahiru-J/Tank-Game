@@ -27,6 +27,7 @@ namespace Assets.Model
 
         private static int getFillingValue(int posX, int posY)
         {
+            
             return 0;
         }
 
